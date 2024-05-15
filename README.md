@@ -20,15 +20,15 @@ Schemes in the directory \Schemes
 
 The following modules are used in the design:
     Modules: 
-    - Wemos ESP8266, 
-    - DFPlayer, 
-    - 0.66 Inch OLED LED LCD Display Shield (compatible with WEMOS D1 MINI). 
-    - TTP223 – touch button, 
-    - SG-90 – servo motor for head movement.
+    - Wemos ESP8266; 
+    - DFPlayer; 
+    - 0.66 Inch OLED LED LCD Display Shield (compatible with WEMOS D1 MINI); 
+    - TTP223 – touch button;
+    - SG-90 – servo motor for head movement;
     Sensors:
-    - DHT-11 – for temperature and humidity measurement, 
-    - TEMT6000 – for light measurement, 
-    - SR-602 – for motion detection.
+    - DHT-11 – for temperature and humidity measurement; 
+    - TEMT6000 – for light measurement; 
+    - SR-602 – for motion detection;
 
 All applications for "WiFi Lamp Javelin" are compatible with the firmware for this project.
 
@@ -70,15 +70,15 @@ https://github.com/SlingMaster/WiFiRobot007.git
 
 В конструкції використовано
 	Модулі: 
-	- Wemos ESP8266, 
-	- DFPlayer, 
-	- 0.66 Inch OLED LED LCD Dispaly Shield (сумісний з WEMOS D1 MINI). 
-	- TTP223 – сенсорна кнопка, 
-	- SG-90 – сервопривод для управління рухом голови.
+	- Wemos ESP8266; 
+	- DFPlayer; 
+	- 0.66 Inch OLED LED LCD Dispaly Shield (сумісний з WEMOS D1 MINI); 
+	- TTP223 – сенсорна кнопка; 
+	- SG-90 – сервопривод для управління рухом голови;
 	Сенсори:
-	- DHT-11 – для вимірювання температури та вологості, 
-	- TEMT6000 – для вимірювання освітлення, 
-	- SR-602 – для виявлення руху.
+	- DHT-11 – для вимірювання температури та вологості;
+	- TEMT6000 – для вимірювання освітлення; 
+	- SR-602 – для виявлення руху;
 	
 
 Всі додатки для "WiFi Lamp Javelin" сумісні з прошивкою для цього проекту.
