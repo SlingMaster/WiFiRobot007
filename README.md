@@ -114,7 +114,7 @@ https://www.youtube.com/@SlingMasterJSC
 
 (EN)
 
-### Firmware WiFiRobot007»| 115 effects
+### Firmware WiFiRobot007 | 115 effects
 ### Version 6.00 
 1. 115 effects for the lamp.
 2. Sound accompaniment of some effects.
@@ -126,7 +126,7 @@ https://www.youtube.com/@SlingMasterJSC
     - CPU Utilization - Windows application allows visualization of processor load on the lamp.
 (UA)
 
-### Firmware WiFiRobot007»| 115 ефектіd
+### Firmware WiFiRobot007 | 115 ефектіd
 ### Версія 6.00 
 1. 115 ефектів для світильника.
 2. Звуковий супровід деяких ефектів.
