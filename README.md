@@ -19,14 +19,18 @@ https://github.com/SlingMaster/WiFiRobot007.git
 Schemes in the directory \Schemes
 
 The following modules are used in the design:
+
 Modules:
+
     * Wemos ESP8266; 
     * DFPlayer; 
     * 0.66 Inch OLED LED LCD Display Shield (compatible with WEMOS D1 MINI); 
     * TTP223 – touch button;
     * SG-90 – servo motor for head movement;
+
 Sensors:
-    * DHT-11 – for temperature and humidity measurement; 
+    
+	* DHT-11 – for temperature and humidity measurement; 
     * TEMT6000 – for light measurement; 
     * SR-602 – for motion detection;
 
@@ -69,13 +73,17 @@ https://github.com/SlingMaster/WiFiRobot007.git
 схема в директорії \Schemes
 
 В конструкції використовано
+
 Модулі:
+
     * Wemos ESP8266; 
     * DFPlayer; 
     * 0.66 Inch OLED LED LCD Dispaly Shield (сумісний з WEMOS D1 MINI); 
     * TTP223 – сенсорна кнопка; 
     * SG-90 – сервопривод для управління рухом голови;
+	
 Сенсори:
+
     * DHT-11 – для вимірювання температури та вологості;
     * TEMT6000 – для вимірювання освітлення; 
     * SR-602 – для виявлення руху;
