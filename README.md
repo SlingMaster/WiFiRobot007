@@ -20,30 +20,30 @@ Schemes in the directory \Schemes
 
 The following modules are used in the design:
 Modules:
-    - Wemos ESP8266; 
-    - DFPlayer; 
-    - 0.66 Inch OLED LED LCD Display Shield (compatible with WEMOS D1 MINI); 
-    - TTP223 – touch button;
-    - SG-90 – servo motor for head movement;
+    * Wemos ESP8266; 
+    * DFPlayer; 
+    * 0.66 Inch OLED LED LCD Display Shield (compatible with WEMOS D1 MINI); 
+    * TTP223 – touch button;
+    * SG-90 – servo motor for head movement;
 Sensors:
-    - DHT-11 – for temperature and humidity measurement; 
-    - TEMT6000 – for light measurement; 
-    - SR-602 – for motion detection;
+    * DHT-11 – for temperature and humidity measurement; 
+    * TEMT6000 – for light measurement; 
+    * SR-602 – for motion detection;
 
 All applications for "WiFi Lamp Javelin" are compatible with the firmware for this project.
 
 ## Actions of the touch button for this firmware:
-    - single click – turn on or off the lamp;
-    - double click – next effect;
-    - triple click – previous effect;
-    - quadruple click – start effects playback in a loop;
-    - fivefold click – start the fire effect (intimate setting);
-    - sixfold click – start the lamp shutdown timer in 5 minutes;
-    - sevenfold click – change the lamp operating mode: from WiFi access point to WiFi client or vice versa;
-    - long press – increase or decrease the brightness;
-    - single click and hold – increase or decrease the speed;
-    - double click and hold – increase or decrease the scale;
-    - hold when the lamp is off – turn on the "White Light" effect;
+    * single click – turn on or off the lamp;
+    * double click – next effect;
+    * triple click – previous effect;
+    * quadruple click – start effects playback in a loop;
+    * fivefold click – start the fire effect (intimate setting);
+    * sixfold click – start the lamp shutdown timer in 5 minutes;
+    * sevenfold click – change the lamp operating mode: from WiFi access point to WiFi client or vice versa;
+    * long press – increase or decrease the brightness;
+    * single click and hold – increase or decrease the speed;
+    * double click and hold – increase or decrease the scale;
+    * hold when the lamp is off – turn on the "White Light" effect;
 
 Additional videos about other Arduino projects can be found on the YouTube channel SlingMasterJSC, 
 by following the link: 
@@ -70,31 +70,31 @@ https://github.com/SlingMaster/WiFiRobot007.git
 
 В конструкції використовано
 Модулі:
-    - Wemos ESP8266; 
-    - DFPlayer; 
-    - 0.66 Inch OLED LED LCD Dispaly Shield (сумісний з WEMOS D1 MINI); 
-    - TTP223 – сенсорна кнопка; 
-    - SG-90 – сервопривод для управління рухом голови;
+    * Wemos ESP8266; 
+    * DFPlayer; 
+    * 0.66 Inch OLED LED LCD Dispaly Shield (сумісний з WEMOS D1 MINI); 
+    * TTP223 – сенсорна кнопка; 
+    * SG-90 – сервопривод для управління рухом голови;
 Сенсори:
-    - DHT-11 – для вимірювання температури та вологості;
-    - TEMT6000 – для вимірювання освітлення; 
-    - SR-602 – для виявлення руху;
+    * DHT-11 – для вимірювання температури та вологості;
+    * TEMT6000 – для вимірювання освітлення; 
+    * SR-602 – для виявлення руху;
 
 
 Всі додатки для "WiFi Lamp Javelin" сумісні з прошивкою для цього проекту.
 
 ## Дії сенсорної кнопки для цієї прошивки:
-    - одноразовий клік – увімкнення або вимкнення світильника;
-    - дворазовий клік – наступний ефект;
-    - триразовий клік – попередній ефект;
-    - чотириразовий клік – запуск відтворення ефеків у циклі;
-    - п'ятиразовий клік – запуск ефекту вогонь (інтимна обстановка);
-    - шестиразовий клік – запуск таймера вимкнення лампи через 5 хвилин;
-    - семиразовий клік – зміна робочого режиму лампи: з WiFi точки доступу на WiFi клієнт чи навпаки;
-    - утримання – збільшення чи зменшення "яскравості";
-    - одноразовий клік та утримання – збільшення чи зменшення «швидкості»;
-    - дворазовий клік та утримання – збільшення чи зменшення «масштабу»;
-    - утримання при вимкненій лампі – включає ефект «Біле Світло»;
+    * одноразовий клік – увімкнення або вимкнення світильника;
+    * дворазовий клік – наступний ефект;
+    * триразовий клік – попередній ефект;
+    * чотириразовий клік – запуск відтворення ефеків у циклі;
+    * п'ятиразовий клік – запуск ефекту вогонь (інтимна обстановка);
+    * шестиразовий клік – запуск таймера вимкнення лампи через 5 хвилин;
+    * семиразовий клік – зміна робочого режиму лампи: з WiFi точки доступу на WiFi клієнт чи навпаки;
+    * утримання – збільшення чи зменшення "яскравості";
+    * одноразовий клік та утримання – збільшення чи зменшення «швидкості»;
+    * дворазовий клік та утримання – збільшення чи зменшення «масштабу»;
+    * утримання при вимкненій лампі – включає ефект «Біле Світло»;
 
 Додаткові відео про інші проекти Arduino можна знайти на YouTube-каналі SlingMasterJSC, 
 перейшовши за посиланням: 
