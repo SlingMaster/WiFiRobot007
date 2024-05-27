@@ -1,6 +1,6 @@
 # WiFiRobot007
 Arduino project IOT WiFi Robot ver 007
-
+![WiFiRobot007](Schemes/ico_robot.png)
 (EN)
 ## WiFi model of the robot "Robot 007", or "Botan" or simply "Professor Dowell's Head".
 ### Firmware WiFiRobot007»
@@ -17,6 +17,7 @@ https://github.com/SlingMaster/WiFiRobot007.git
 * The sound files are located in the SD archive; you need to make a copy and paste them into the DFPlayer.
 
 Schemes in the directory \Schemes
+![WiFiRobot007](Schemes/RobotScheme.jpg)
 
 The following modules are used in the design:
 

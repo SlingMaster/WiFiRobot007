@@ -198,7 +198,7 @@ void SoundMsg(byte msg) {
         send_command(0x0F, FEEDBACK, 1, 11);
         break;
       case 12:
-        send_command(0x0F, FEEDBACK, 1, 12);
+        send_command(0x0F, FEEDBACK, 1, (thisDay == 5) ? 19 : 12);
         break;
       case 13:
         send_command(0x0F, FEEDBACK, 1, 13);

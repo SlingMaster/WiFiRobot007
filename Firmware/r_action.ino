@@ -127,13 +127,14 @@ void runRobotAction() {
   if (millis() - activityTimer >= 30) {
     activityTimer = millis();
     action_timeout++;
+    
     if (activity == TIMEOUT - 2) showActualParams();
 
-    //    if (action_timeout % 10 == 0U | activity == 1U ) LOG.printf_P(PSTR("• %3d | Scenario %3d | sleep_mode %d | activity %3d |\n\r"), action_timeout, lastScenario, sleep_mode, activity);
+    //    if (action_timeout % 10 == 0U | activity == 1U ) LOG.printf_P(PSTR("• % 3d | Scenario % 3d | sleep_mode % d | activity % 3d | \n\r"), action_timeout, lastScenario, sleep_mode, activity);
 
 
     if (activity == 1U) {
-      // LOG.printf_P(PSTR("• %3d | Scenario %3d | sleep_mode %d | activity %3d | s_timeout •%2d \n\r"), action_timeout, lastScenario, sleep_mode, activity, sound_timeout);
+      // LOG.printf_P(PSTR("• % 3d | Scenario % 3d | sleep_mode % d | activity % 3d | s_timeout • % 2d \n\r"), action_timeout, lastScenario, sleep_mode, activity, sound_timeout);
       activity = 0;
       sleep_mode = true;
       runScenario(ONflag ? 1 : 0);
@@ -149,6 +150,7 @@ void runRobotAction() {
         sleep_mode = false;
         SoundGreetings(sound_timeout);
         action_timeout = 5U;
+        motion = false; 
         // activation IOT Lithouse ----------
         SendCommandToGroup("192.168.1.50", 1, night, floor(s_temp));
       } else {
@@ -180,7 +182,7 @@ void runRobotAction() {
       //    showProgress();
 
       if (action_timeout % 8U == 0U) {
-      LOG.printf_P(PSTR("• %3d | Scenario %3d | sleep_mode %d | activity %3d | isSoundPlay •%2d \n\r"), action_timeout, lastScenario, sleep_mode, activity, isSoundPlay);
+      LOG.printf_P(PSTR("• % 3d | Scenario % 3d | sleep_mode % d | activity % 3d | isSoundPlay • % 2d \n\r"), action_timeout, lastScenario, sleep_mode, activity, isSoundPlay);
       } */
 
     /* read dht sensor -------- */
@@ -209,7 +211,7 @@ void runRobotAction() {
         EnvironmentMsg(s_temp);
         sound_timeout++;
       }
-      LOG.printf_P(PSTR("• | Scenario %2d | sleep %d | activity %3d | sound_timeout •%3d \n\r"), lastScenario, sleep_mode, activity, sound_timeout);
+      LOG.printf_P(PSTR("• | Scenario % 2d | sleep % d | activity % 3d | sound_timeout • % 3d \n\r"), lastScenario, sleep_mode, activity, sound_timeout);
     }
 
     if (action_timeout == 110U) {
@@ -312,7 +314,7 @@ void Scenario() {
   lastScenario = scenario;
 
 #ifdef GENERAL_DEBUG
-  LOG.printf_P(PSTR("• %3d | Go Scenario •%2d | scenarios %3d | head •%3d \n\r"), action_timeout, lastScenario, scenarios,  headAngle);
+  LOG.printf_P(PSTR("• % 3d | Go Scenario • % 2d | scenarios % 3d | head • % 3d \n\r"), action_timeout, lastScenario, scenarios,  headAngle);
 #endif
 }
 
@@ -423,7 +425,7 @@ void RobotLedEffects(byte flagDress, byte flagEyes) {
     leds[0] = color_l;    // left  eye
   } else {
     if ((eyes_delay > 0) & (eyes_delay < 255)) eyes_delay--;
-    // LOG.printf_P(PSTR("• %3d | Scenario •%3d | eyes_delay •%3d |\n\r"), action_timeout, lastScenario, eyes_delay);
+    // LOG.printf_P(PSTR("• % 3d | Scenario • % 3d | eyes_delay • % 3d | \n\r"), action_timeout, lastScenario, eyes_delay);
   }
 
   /* draw dress -------------- */
@@ -465,7 +467,7 @@ void animeWiFiLogo(bool esp_mode) {
 void showIcon(byte icon_id, uint16_t delay_interval) {
   const byte POS_Y = 0;
   display.clearDisplay();
-  //  LOG.printf_P(PSTR("• %3d | Scenario •%2d | icon_id •%2d |\n\r"), action_timeout, lastScenario, icon_id);
+  //  LOG.printf_P(PSTR("• % 3d | Scenario • % 2d | icon_id • % 2d | \n\r"), action_timeout, lastScenario, icon_id);
   switch (icon_id) {
     case 0:   /* robot */
       display.drawBitmap(16, POS_Y, icon_robot, 32, 32, 1);
@@ -479,7 +481,7 @@ void showIcon(byte icon_id, uint16_t delay_interval) {
     case 3:   /* cycle */
       display.drawBitmap(16, POS_Y, icon_cycle, 32, 32, 1);
       display.setCursor(0, 32);
-      printlnTextCenter("| " + String(currentMode) + " |", 1, WHITE);
+      printlnTextCenter(" | " + String(currentMode) + " | ", 1, WHITE);
       break;
     case 4:   /* alarm */
       display.drawBitmap(16, POS_Y, icon_alarm, 32, 32, 1);
@@ -528,7 +530,7 @@ void showUsageCPU(byte val) {
   const byte POS_Y = 0;
   display.drawBitmap(16, POS_Y, icon_cpu, 32, 32, 1);
   display.setCursor(0, 34);
-  printlnTextCenter("Usage " + String(val) + "%", 1, WHITE);
+  printlnTextCenter("Usage " + String(val) + " % ", 1, WHITE);
   display.display();
 }
 
@@ -574,7 +576,7 @@ void readSensorDHT() {
     case DHT_OK:
       s_temp = (int) (sensor.tem * 10) / 10.f - 7;
       s_hum = (int) (sensor.hum * 10) / 10.f;
-      // LOG.println((String) "DHT 11: " + s_hum + "% | " + s_temp + "*C");
+      // LOG.println((String) "DHT 11: " + s_hum + " % | " + s_temp + "*C");
       break;
     case DHT_ERROR_CHECKSUM:   LOG.println("DHT 11: HE PABEHCTBO KC");                     break;
     case DHT_ERROR_DATA:       LOG.println("DHT 11: OTBET HE COOTBETCTB. CEHCOPAM 'DHT'"); break;
